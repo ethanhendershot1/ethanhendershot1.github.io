@@ -191,15 +191,9 @@ const radar = L.tileLayer.wms('https://mesonet.agron.iastate.edu/cgi-bin/wms/nex
     attribution: 'Weather data &copy; Iowa Environmental Mesonet'
 }).addTo(map);
 
-// 4. Create the control with all layers
 L.control.layers(
-    { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
-    { "Quick eats": qeatsLayer, "Stores": storesLayer, "Landmarks": landmarksLayer, 
-        "Streets": linesLayer, "Buildings": buildingLayer }
-
-    L.control.layers(
     { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
     { "Quick eats": qeatsLayer, "Stores": storesLayer, "Landmarks": landmarksLayer, 
         "Streets": linesLayer, "Buildings": buildingLayer, "Radar": radar }
 ).addTo(map);
-).addTo(map);
+
