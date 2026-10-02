@@ -1,8 +1,11 @@
+// New
 const map = L.map('map', { 
-    center: [40, -83], 
-    zoom: 13
-});
-
+    center: [40.0007, -83.008], // -- NEW
+    zoom: 17                    // -- NEW
+});;
+//
+// KEEP all the base map layers
+//
 const streets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19, 
     attribution: 'Tiles &copy; Esri'
@@ -29,16 +32,6 @@ L.control.layers({
     "Satellite": satellite,
     "OpenStreetMap": osm
 }).addTo(map);
-
-// New
-const map = L.map('map', { 
-    center: [40.0007, -83.008], // -- NEW
-    zoom: 17                    // -- NEW
-});
-
-//
-// KEEP all the base map layers
-//
 
 // Add the following
 const quick_eats = [
