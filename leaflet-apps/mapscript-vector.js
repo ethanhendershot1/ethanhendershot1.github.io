@@ -26,13 +26,6 @@ const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-L.control.layers({ 
-    "Streets": streets, 
-    "Topographic": topo, 
-    "Satellite": satellite,
-    "OpenStreetMap": osm
-}).addTo(map);
-
 // Add the following
 const quick_eats = [
     { name: "Qdoba Mexican Eats",  coords: [40.002265770114704, -83.00831544391653] },
@@ -54,3 +47,10 @@ const landmarks = [
 quick_eats.forEach(f => L.marker(f.coords).addTo(map));
 convenience_stores.forEach(f => L.marker(f.coords).addTo(map));
 landmarks.forEach(f => L.marker(f.coords).addTo(map));
+
+L.control.layers({ 
+    "Streets": streets, 
+    "Topographic": topo, 
+    "Satellite": satellite,
+    "OpenStreetMap": osm
+}).addTo(map);
