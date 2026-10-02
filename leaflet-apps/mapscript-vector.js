@@ -66,9 +66,6 @@ const high = [
     [39.99855011031908, -83.00780731455644]
 ]
 
-L.polyline(college, { color: '#a6531c', weight: 4 }).addTo(map);
-L.polyline(eighteenth, { color: '#a6531c', weight: 4 }).addTo(map);
-L.polyline(high, { color: '#a6531c', weight: 4 }).addTo(map);
 
 L.control.layers({ 
     "Streets": streets, 
@@ -95,6 +92,10 @@ function svgIcon(color) {
 const QEATS_COLOR    = '#a6531c';
 const LANDMARK_COLOR = '#1fbf78';
 const STORE_COLOR    = '#1f78bf'
+
+L.polyline(college, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(eighteenth, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(high, { color: '#a6531c', weight: 4 }).addTo(map);
 
 quick_eats.forEach(f => L.marker(f.coords, { icon: svgIcon(QEATS_COLOR) }).addTo(map));
 convenience_stores.forEach(f => L.marker(f.coords, { icon: svgIcon(STORE_COLOR) }).addTo(map));
