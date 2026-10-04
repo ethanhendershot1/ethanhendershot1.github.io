@@ -67,6 +67,5 @@ landmarks.forEach(f => L.marker(f.coords).addTo(map));
 
 L.control.layers(
     { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
-    { "Quick eats": qeatsLayer, "Stores": storesLayer, "Landmarks": landmarksLayer, 
-        "Streets": linesLayer, "Buildings": buildingLayer }
+    { "Quick eats": qeatsLayer, "Stores": storesLayer, "Landmarks": landmarksLayer}
 ).addTo(map);
