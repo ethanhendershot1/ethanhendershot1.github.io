@@ -61,6 +61,9 @@ const landmarksLayer = L.layerGroup(
   landmarks.map(f => L.marker(f.coords, { icon: svgIcon(LANDMARK_COLOR) })) // construct a new array
 ).addTo(map);
 
+quick_eats.forEach(f => L.marker(f.coords).addTo(map));
+convenience_stores.forEach(f => L.marker(f.coords).addTo(map));
+landmarks.forEach(f => L.marker(f.coords).addTo(map));
 
 L.control.layers(
     { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
