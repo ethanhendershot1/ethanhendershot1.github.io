@@ -37,3 +37,10 @@ const landmarks = [
     { name: "Ripley's Believe It or Not!",   coords: [38.328435, -75.086468] },
     { name: "Jolly Roger at the Pier",  coords: [38.327888, -75.085751] }
 ];
+
+
+L.control.layers(
+    { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
+    { "Quick eats": qeatsLayer, "Stores": storesLayer, "Landmarks": landmarksLayer, 
+        "Streets": linesLayer, "Buildings": buildingLayer }
+).addTo(map);
