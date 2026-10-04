@@ -43,6 +43,24 @@ const landmarks = [
     { name: "Jolly Roger at the Pier",  coords: [38.327888, -75.085751] }
 ];
 
+const QEATS_COLOR    = '#a6531c';
+const LANDMARK_COLOR = '#1fbf78';
+const STORE_COLOR    = '#1f78bf'
+
+// 1. Make 3 layer groups for the points
+
+const qeatsLayer = L.layerGroup(
+  quick_eats.map(f => L.marker(f.coords, { icon: svgIcon(QEATS_COLOR) })) // construct a new array
+).addTo(map);
+
+const storesLayer = L.layerGroup(
+  convenience_stores.map(f => L.marker(f.coords, { icon: svgIcon(STORE_COLOR) })) // construct a new array
+).addTo(map);
+
+const landmarksLayer = L.layerGroup(
+  landmarks.map(f => L.marker(f.coords, { icon: svgIcon(LANDMARK_COLOR) })) // construct a new array
+).addTo(map);
+
 
 L.control.layers(
     { "Streets": streets, "Topographic": topo, "Satellite": satellite, "OpenStreetMap": osm },
