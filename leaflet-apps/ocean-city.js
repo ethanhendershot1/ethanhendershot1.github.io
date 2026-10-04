@@ -21,6 +21,11 @@ const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/servi
     attribution: 'Tiles &copy; Esri'
 });
 
+const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
 const quick_eats = [
     { name: "Thrasher Fries",  coords: [38.328023, -75.086611] },
     { name: "TLC Polish Water Ice",           coords: [38.332652, -75.084465] },
