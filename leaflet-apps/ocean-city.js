@@ -65,11 +65,35 @@ const Jolly_Roger_at_the_Pier = [
     [38.327846, -75.084936]
 ];
 
+Const Martys_Playland= [
+    // outer ring
+    [
+        [38.327783, -75.087337],
+        [38.327561, -75.087457],
+        [38.327441, -75.087075],
+        [38.327647, -75.086964]
+    ],
+    // first hole
+    [
+        [38.327669, -75.087249],
+        [38.327644, -75.087178],
+        [38.327571, -75.087217],
+        [38.327594, -75.087285]
+    ]
+]
+
 L.polygon(Jolly_Roger_at_the_Pier, {
     color: '#1f6f78',   // stroke color
     fillColor: '#1f6f78',
     fillOpacity: 0.25
 }).addTo(map);
+
+L.polygon(Martys_Playland, {
+    color: '#1f6f78',   // stroke color
+    fillColor: '#1f6f78',
+    fillOpacity: 0.25
+}).addTo(map);
+
 
 L.polyline(beach_path_1, { color: '#a6531c', weight: 4 }).addTo(map);
 L.polyline(beach_path_2, { color: '#a6531c', weight: 4 }).addTo(map);
