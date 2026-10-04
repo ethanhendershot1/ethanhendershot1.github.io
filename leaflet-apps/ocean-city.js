@@ -44,7 +44,7 @@ const landmarks = [
 ];
 
 quick_eats.forEach(f => L.marker(f.coords).addTo(map));
-convenience_stores.forEach(f => L.marker(f.coords).addTo(map));
+stores.forEach(f => L.marker(f.coords).addTo(map));
 landmarks.forEach(f => L.marker(f.coords).addTo(map));
 
 L.control.layers({
