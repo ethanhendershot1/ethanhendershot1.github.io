@@ -78,12 +78,12 @@ const LANDMARK_COLOR = '#1fbf78';
 const STORE_COLOR    = '#1f78bf'
 
 quick_eats.forEach(f => L.marker(f.coords, { icon: svgIcon(QEATS_COLOR) }).addTo(map));
-convenience_stores.forEach(f => L.marker(f.coords, { icon: svgIcon(STORE_COLOR) }).addTo(map));
+stores.forEach(f => L.marker(f.coords, { icon: svgIcon(STORE_COLOR) }).addTo(map));
 landmarks.forEach(f => L.marker(f.coords, { icon: svgIcon(LANDMARK_COLOR) }).addTo(map)
 
-L.polyline(college, { color: '#a6531c', weight: 4 }).addTo(map);
-L.polyline(eighteenth, { color: '#a6531c', weight: 4 }).addTo(map);
-L.polyline(high, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(beach_path_1, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(beach_path_2, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(boardwalk, { color: '#a6531c', weight: 4 }).addTo(map);
 
 L.control.layers({
     "Streets": streets, 
