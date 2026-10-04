@@ -21,3 +21,19 @@ const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/servi
     attribution: 'Tiles &copy; Esri'
 });
 
+const quick_eats = [
+    { name: "Thrasher Fries",  coords: [38.328023, -75.086611] },
+    { name: "TLC Polish Water Ice",           coords: [38.332652, -75.084465] },
+    { name: "Candy Kitchen",         coords: [38.328948, -75.086417] }
+]
+
+const stores = [
+    {name: "Atlantic Airbrush",               coords: [38.329267, -75.086147] },
+    {name: "T-shirt Factory",                 coords: [38.328617, -75.086549] }
+]
+
+// These may or may not be "landmarks", but a square and a garage are hard to miss 
+const landmarks = [
+    { name: "Ripley's Believe It or Not!",   coords: [38.328435, -75.086468] },
+    { name: "Jolly Roger at the Pier",  coords: [38.327888, -75.085751] }
+];
