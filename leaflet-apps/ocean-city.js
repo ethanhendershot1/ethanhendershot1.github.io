@@ -65,7 +65,7 @@ const Jolly_Roger_at_the_Pier = [
     [38.327846, -75.084936]
 ];
 
-const Martys_Playland= [
+const Martys_Playland = [
     // outer ring
     [
         [38.327783, -75.087337],
