@@ -46,17 +46,21 @@ const landmarks = [
 const beach_path_1 = [
     [38.330078, -75085490],
     [38.329675, -75.084208]
-]
+];
 
 const beach_path_2 = [
     [38.328915, -75.086055],
     [38.328468, -75.084594]
-]
+];
 
 const boardwalk = [
     [38.332401, -75.084426],
     [38.328001, -75.086744]
-]
+];
+
+L.polyline(beach_path_1, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(beach_path_2, { color: '#a6531c', weight: 4 }).addTo(map);
+L.polyline(boardwalk, { color: '#a6531c', weight: 4 }).addTo(map);
 
 function svgIcon(color) {
     return L.divIcon({
