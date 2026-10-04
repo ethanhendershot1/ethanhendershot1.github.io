@@ -58,6 +58,19 @@ const boardwalk = [
     [38.328001, -75.086744]
 ];
 
+const Jolly_Roger_at_the_Pier = [
+    [38.328311, -75.086287],
+    [38.327875, -75.086493],
+    [38.327442, -75.085138],
+    [38.327846, -75.084936]
+];
+
+L.polygon(Jolly_Roger_at_the_Pier, {
+    color: '#1f6f78',   // stroke color
+    fillColor: '#1f6f78',
+    fillOpacity: 0.25
+}).addTo(map);
+
 L.polyline(beach_path_1, { color: '#a6531c', weight: 4 }).addTo(map);
 L.polyline(beach_path_2, { color: '#a6531c', weight: 4 }).addTo(map);
 L.polyline(boardwalk, { color: '#a6531c', weight: 4 }).addTo(map);
