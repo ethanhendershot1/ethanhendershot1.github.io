@@ -1,7 +1,7 @@
 // New
 const map = L.map('map', { 
     center: [38.3297, -75.0856], 
-    zoom: 15               
+    zoom: 17              
 });
 //
 // KEEP all the base map layers
