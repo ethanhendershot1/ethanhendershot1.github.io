@@ -3,21 +3,6 @@ let options = {
     timeout: 45000
 };
 
-const streets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19, 
-    attribution: 'Tiles &copy; Esri'
-}).addTo(map);   // on by default
-
-const topo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19, 
-    attribution: 'Tiles &copy; Esri'
-});
-
-const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19, 
-    attribution: 'Tiles &copy; Esri'
-});
-
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
 } else {
@@ -53,9 +38,3 @@ function errorCallback(error) {
     document.getElementById("log").innerHTML = `Error: ${msgs[error.code]}`;
 }
 
-L.control.layers({
-    "Streets": streets, 
-    "Topographic": topo, 
-    "Satellite": satellite,
-    "OpenStreetMap": osm
-}).addTo(map);
