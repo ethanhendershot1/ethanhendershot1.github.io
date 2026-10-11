@@ -52,3 +52,10 @@ function errorCallback(error) {
     };
     document.getElementById("log").innerHTML = `Error: ${msgs[error.code]}`;
 }
+
+L.control.layers({
+    "Streets": streets, 
+    "Topographic": topo, 
+    "Satellite": satellite,
+    "OpenStreetMap": osm
+}).addTo(map);
