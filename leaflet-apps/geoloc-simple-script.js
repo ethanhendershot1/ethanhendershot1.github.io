@@ -81,6 +81,3 @@ function errorCallback(error) {
     2: "Position unavailable",
     3: "Request timed out"
   };
-
-textContent = message[error.code] || `Location error: ${error.message}`;
-}
