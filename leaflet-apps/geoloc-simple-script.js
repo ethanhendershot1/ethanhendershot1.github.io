@@ -82,5 +82,5 @@ function errorCallback(error) {
     3: "Request timed out"
   };
 
-textContent = messages[error.code] || `Location error: ${error.message}`;
+textContent = message[error.code] || `Location error: ${error.message}`;
 }
