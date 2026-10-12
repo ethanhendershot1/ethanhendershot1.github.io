@@ -12,7 +12,7 @@ let marker;
 let accuracyCircle;
 
 let options = {
-    enableHighAccuracy: true,
+    enableHighAccuracy: false,
     timeout: 45000
 };
 
