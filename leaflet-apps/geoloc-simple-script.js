@@ -33,18 +33,10 @@ function successCallback(position) {
     Accuracy: ${accuracy.toFixed(2)} meters<br/>
     Time: ${new Date(position.timestamp).toLocaleString()}<br/>`;
 
-  if (altitude !== null) {
-    msg += `Altitude: ${altitude.toFixed(2)} meters<br/>`;
-  }
-  if (altitudeAccuracy !== null) {
-    msg += `Altitude accuracy: ${altitudeAccuracy.toFixed(2)} meters<br/>`;
-  }
-  if (heading !== null) {
-    msg += `Heading: ${heading}&deg;<br/>`;
-  }
-  if (speed !== null) {
-    msg += `Speed: ${speed.toFixed(2)} m/s<br/>`;
-  }
+  if (altitude !== null) {msg += `Altitude: ${altitude.toFixed(2)} meters<br/>`;}
+  if (altitudeAccuracy !== null) {msg += `Altitude accuracy: ${altitudeAccuracy.toFixed(2)} meters<br/>`;}
+  if (heading !== null) {msg += `Heading: ${heading}&deg;<br/>`;}
+  if (speed !== null) {msg += `Speed: ${speed.toFixed(2)} m/s<br/>`;}
 
 textContent = "Location found.";
   map.setView(point, 16);
