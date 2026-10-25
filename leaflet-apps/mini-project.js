@@ -79,7 +79,7 @@ const baseLayers = {
   'Native American Pop': JusticeMap_americanIndian,
   'White Pop': JusticeMap_white,
   'Hispanic Pop': JusticeMap_hispanic,
-  'Airport': OPNVKarte,
+  'Public Transport': OPNVKarte,
   'High Definition': USGS_USImageryTopo,
   'Ocean Topo': Esri_OceanBasemap
 
