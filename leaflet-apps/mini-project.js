@@ -180,9 +180,7 @@ info.update = function () {
     }
   }
 
-  this._div.innerHTML = active.length
-    ? active.join('<hr>')
-    : 'No listed map layers are currently selected.';
+  this._div.innerHTML = active.length ? active.join('<hr>') : 'No listed map layers are currently selected.';
 
   // Allow links in the panel to be clicked without dragging the map.
   L.DomEvent.disableClickPropagation(this._div);
