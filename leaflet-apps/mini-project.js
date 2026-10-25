@@ -108,7 +108,7 @@ const layerInfo = new Map([
   }],
   [CyclOSM, {
     name: 'CyclOSM',
-    description: 'Cycling-focused map showing bicycle routes and related infrastructure.',
+    description: 'Cycling focused map showing bicycle routes and related infrastructure.',
     provider: '<a href="https://www.cyclosm.org/">CyclOSM</a>'
   }],
   [WaymarkedTrails_hiking, {
@@ -118,12 +118,12 @@ const layerInfo = new Map([
   }],
   [TopPlusOpen_Grey, {
     name: 'TopPlusOpen Grey',
-    description: 'Grey-style topographic map layer.',
+    description: 'Grey style topographic map layer.',
     provider: '<a href="https://www.bkg.bund.de/">BKG</a>'
   }],
   [JusticeMap_americanIndian, {
     name: 'JusticeMap: American Indian',
-    description: 'Map showing the American Indian population data layer.',
+    description: 'Map showing the Native American population data layer.',
     provider: '<a href="https://www.justicemap.org/">JusticeMap</a>'
   }],
   [JusticeMap_white, {
@@ -153,7 +153,7 @@ const layerInfo = new Map([
   }],
   [Esri_OceanBasemap, {
     name: 'Esri Ocean Basemap',
-    description: 'Ocean focused basemap with bathymetric and marine reference information.',
+    description: 'Ocean basemap with bathymetric and marine reference information.',
     provider: '<a href="https://www.esri.com/">Esri</a>'
   }]
 ]);
